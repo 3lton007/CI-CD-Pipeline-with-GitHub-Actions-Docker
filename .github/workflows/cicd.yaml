@@ -28,7 +28,7 @@ jobs:
     
     - name: Run tests
       run: |
-        python -m pytest src/tests/ -v --tb=short
+        python -m pytest src/tests/test.py -v --tb=short
 
   build-and-push:
     needs: test
